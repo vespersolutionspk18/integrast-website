@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import ButtonRight from "@/public/assets/right.svg";
-
-
+import ButtonArrowwhite from "@/public/assets/buttonarrowwhite.svg"; 
+import ButtonArrow from "@/public/assets/buttonarrow.svg"; 
 
 const Faqsection = () => {
   // Array of FAQs
