@@ -15,7 +15,7 @@ const Services = () => {
     <h5 className="ml-5 mt-5 mr-5 mb-5 font-sans text-3xl text-gray-700 group-hover:text-[#ec8123] font-light">
       Accounting & Finance
     </h5>
-    <p className="ml-5 mr-5 mb-5 text-justify leading-tight lg:leading-normal font-sans font-light text-lg md:text-xl text-gray-600">
+    <p className="ml-5 mr-5 mb-5 text-justify font-sans font-light text-lg md:text-xl text-gray-600">
       We are committed to serving the public interest by providing objective assurance over data on which investors rely.
     </p>
     {/* Hidden div */}
@@ -32,7 +32,7 @@ const Services = () => {
     <h5 className="ml-5 mt-5 mr-5 mb-5 font-sans text-3xl text-gray-700 group-hover:text-[#ec8123] font-light">
       Tax & Legal
     </h5>
-    <p className="ml-5 mr-5 mb-5 text-justify font-sans font-light leading-tight lg:leading-normal text-lg lg:text-xl text-gray-600">
+    <p className="ml-5 mr-5 mb-5 text-justify font-sans font-light text-lg lg:text-xl text-gray-600">
       We are committed to serving the public interest by providing objective assurance over data on which investors rely.
     </p>
     {/* Hidden div */}
@@ -48,7 +48,7 @@ const Services = () => {
     <h5 className="ml-5 mt-5 mr-5 mb-5 font-sans text-3xl text-gray-700 group-hover:text-[#ec8123] font-light">
       Technology & IT
     </h5>
-    <p className="ml-5 mr-5 mb-5 text-justify font-sans font-light leading-tight lg:leading-normal text-lg md:text-xl text-gray-600">
+    <p className="ml-5 mr-5 mb-5 text-justify font-sans font-light text-lg md:text-xl text-gray-600">
       We are committed to serving the public interest by providing objective assurance over data on which investors rely.
     </p>
     {/* Hidden div */}
@@ -70,18 +70,6 @@ const Services = () => {
   </div>
             </div>
                 </div>
-                <div className="block lg:hidden">
-  <div
-    id="button"
-    className="group bg-white h-[44px] flex-row border-[1px] border-gray-700 text-gray-900 text-[16px] py-1 px-1 font-light rounded-full flex items-center justify-between w-[200px] transition-width duration-500 ease-in-out hover:w-[225px] hover:bg-gray-700 hover:border-gray-700 hover:text-white hover:cursor-pointer"
-  >
-    <div className="mx-3 font-sans font-regular">View All Services</div>
-    <div className="bg-gray-700 rounded-full h-[36px] w-[36px] flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:rotate-45 group-hover:bg-[#ec8123]">
-      <ButtonArrowwhite className="h-[24px] w-[24px]" />
-    </div>
-  </div>
-</div>
-
     </div>
   )
 }

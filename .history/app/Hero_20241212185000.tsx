@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
         </div>
         <div className="block lg:hidden w-full h-56  rounded-2xl bg-cover" style={{backgroundImage: `url('/assets/heroimage3.jpg')`}}></div>
-        <div className="block xl:hidden mt-10">
+        <div className="block lg:hidden mt-10">
   <div
     id="button"
     className="group bg-white h-[44px] flex-row border-[1px] border-gray-700 text-gray-900 text-[16px] py-1 px-1 font-light rounded-full flex items-center justify-between w-[170px] transition-width duration-500 ease-in-out hover:w-[195px] hover:bg-gray-700 hover:border-gray-700 hover:text-white hover:cursor-pointer"
