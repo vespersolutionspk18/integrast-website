@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import ButtonRight from "@/public/assets/right.svg";
-import ButtonArrowwhite from "@/public/assets/buttonarrowwhite.svg"; 
-import ButtonArrow from "@/public/assets/buttonarrow.svg"; 
 
 const Faqsection = () => {
   // Array of FAQs
@@ -25,10 +23,10 @@ const Faqsection = () => {
   ];
 
   // State to track which FAQ is expanded
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   // Toggle function
-  const toggleSection = (index) => {
+  const toggleSection = (index: number) => {
     setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -60,7 +58,7 @@ const Faqsection = () => {
               </h5>
               <div
                 className={`bg-white border-[1px] border-gray-300 rounded-full h-[36px] w-[36px] flex items-center justify-center transition-transform duration-500 ease-in-out ${
-                  expandedIndex === index ? "rotate-90" : "rotate-0, "
+                  expandedIndex === index ? "rotate-90" : "rotate-0"
                 }`}
               >
                 <ButtonRight className="h-[24px] w-[24px]" />
