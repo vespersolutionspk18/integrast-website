@@ -20,7 +20,7 @@ const Postsart = () => {
         <div className=" flex flex-row mt-5 gap-5 w-full">
             <div className="hover:border-black hover:cursor-pointer flex flex-col rounded-2xl w-1/2  border-[1px] p-4 border-gray-300">
             <div className="w-full h-[340px] rounded-[8px] bg-cover bg-center" style={{backgroundImage: `url('/assets/post3.jpg')`}}></div>
-            <h5 className="font-sans font-light text-3xl mt-5 text-gray-700">Personal accountant&apos;s prescription</h5>
+            <h5 className="font-sans font-light text-3xl mt-5 text-gray-700">Personal accountant's prescription</h5>
             <p className="font-sans font-light text-gray-600 text-lg mt-3">Explore essential tax-saving strategies and financial tips to optimize your returns with insights from our expert personal accountants.</p>
             </div>
             <div className="hover:border-black hover:cursor-pointer flex flex-col rounded-2xl w-1/2  border-[1px] p-4 border-gray-300">
