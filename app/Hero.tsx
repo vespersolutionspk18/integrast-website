@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="flex flex-col p-10 ">
         <div className="flex flex-row mt-24 h-[190px] gap-5 ">
             <div className="w-[55%] flex flex-col">
-                <h1 className="font-light font-sans text-6xl text-gray-600">Unlock Prosperity, <span className="text-gray-800">Choose Expert Guidance</span></h1>
+                <h1 className="font-light font-sans text-6xl text-[#ec8123]">Unlock Prosperity, <span className="text-gray-800">Choose Expert Guidance</span></h1>
                 <h4 className="text-xl font-sans font-light text-gray-900 mt-6">Embark on a transformative journey to financial prosperity with our personalized accountancy services</h4>
             </div>
             <div className="w-[45%] flex flex-col justify-between ">
@@ -18,7 +18,7 @@ const Hero = () => {
   
 >
   <div className="mx-3 font-sans font-regular">Get In Touch</div>
-  <div className="bg-gray-700 rounded-full h-[36px] w-[36px] flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:rotate-45">
+  <div className="bg-gray-700 rounded-full h-[36px] w-[36px] flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:rotate-45 group-hover:bg-[#ec8123]">
     <ButtonArrowwhite className="h-[24px] w-[24px]" />
   </div>
             </div>

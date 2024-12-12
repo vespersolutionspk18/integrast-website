@@ -32,7 +32,7 @@ const Faqsection = () => {
 
   return (
     <div className="flex flex-col p-10 items-center mt-20">
-      <h2 className="font-sans font-light text-5xl text-gray-700">
+      <h2 className="font-sans font-light text-5xl text-[#ec8123]">
         Frequently Asked Questions
       </h2>
       <p className="font-sans mt-5 font-light text-xl text-gray-600 text-center">
@@ -42,39 +42,48 @@ const Faqsection = () => {
         in your financial endeavours.
       </p>
       <div className="w-full flex flex-col gap-5 mt-5">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className={`border-[1px] ${
-              expandedIndex === index ? "border-gray-500" : "border-gray-300"
-            } rounded-2xl p-5 flex flex-col transition-all duration-500`}
-          >
-            <div
-              onClick={() => toggleSection(index)}
-              className="flex flex-row justify-between items-center cursor-pointer"
-            >
-              <h5 className="font-sans font-light text-2xl text-gray-700">
-                {faq.question}
-              </h5>
-              <div
-                className={`bg-white border-[1px] border-gray-300 rounded-full h-[36px] w-[36px] flex items-center justify-center transition-transform duration-500 ease-in-out ${
-                  expandedIndex === index ? "rotate-90" : "rotate-0"
-                }`}
-              >
-                <ButtonRight className="h-[24px] w-[24px]" />
-              </div>
-            </div>
-            {/* Expandable content */}
-            <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                expandedIndex === index ? "max-h-[200px] mt-5" : "max-h-0"
-              }`}
-            >
-              <p className="text-gray-600 font-sans font-light text-lg">{faq.answer}</p>
-            </div>
-          </div>
-        ))}
+  {faqs.map((faq, index) => (
+    <div
+      key={index}
+      className={`border-[1px] ${
+        expandedIndex === index ? "border-gray-500" : "border-gray-300"
+      } rounded-2xl p-5 flex flex-col transition-all duration-500`}
+    >
+      <div
+        onClick={() => toggleSection(index)}
+        className="flex flex-row justify-between items-center cursor-pointer"
+      >
+        <h5 className="font-sans font-light text-2xl text-gray-700">
+          {faq.question}
+        </h5>
+        <div
+          className={`rounded-full h-[36px] w-[36px] flex items-center justify-center transition-all duration-500 ease-in-out ${
+            expandedIndex === index
+              ? "bg-[#ec8123] rotate-90"
+              : "bg-white border-[1px] border-gray-300 rotate-0"
+          }`}
+        >
+          <ButtonRight
+            className={`h-[24px] w-[24px] transition-colors duration-500 ${
+              expandedIndex === index ? "stroke-white" : "stroke-gray-700"
+            }`}
+            style={{ strokeWidth: 1.5 }}
+          />
+        </div>
       </div>
+      {/* Expandable content */}
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${
+          expandedIndex === index ? "max-h-[200px] mt-5" : "max-h-0"
+        }`}
+      >
+        <p className="text-gray-600 font-sans font-light text-lg">{faq.answer}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+
     </div>
   );
 };
