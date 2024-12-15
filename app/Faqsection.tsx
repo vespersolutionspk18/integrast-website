@@ -31,11 +31,11 @@ const Faqsection = () => {
   };
 
   return (
-    <div className="flex flex-col p-10 items-center mt-20">
-      <h2 className="font-sans font-light text-5xl text-[#ec8123]">
+    <div className="flex flex-col p-7 md:p-10 md:items-center mt-20">
+      <h2 className="font-sans font-light text-4xl md:text-5xl text-[#ec8123]">
         Frequently Asked Questions
       </h2>
-      <p className="font-sans mt-5 font-light text-xl text-gray-600 text-center">
+      <p className="font-sans mt-5 font-light text-lg md:text-xl text-gray-600 md:text-center">
         We prioritize your satisfaction, ensuring a secure financial future.
         Choose us for peace of mind
         <br />
@@ -47,24 +47,24 @@ const Faqsection = () => {
       key={index}
       className={`border-[1px] ${
         expandedIndex === index ? "border-gray-500" : "border-gray-300"
-      } rounded-2xl p-5 flex flex-col transition-all duration-500`}
+      } rounded-2xl p-3 md:p-5 flex flex-col transition-all duration-500`}
     >
       <div
         onClick={() => toggleSection(index)}
         className="flex flex-row justify-between items-center cursor-pointer"
       >
-        <h5 className="font-sans font-light text-2xl text-gray-700">
+        <h5 className="font-sans font-light text-xl md:text-2xl text-gray-700">
           {faq.question}
         </h5>
         <div
-          className={`rounded-full h-[36px] w-[36px] flex items-center justify-center transition-all duration-500 ease-in-out ${
+          className={`rounded-full md:h-[36px] p-1 ml-4 md:ml-0 md:p-0 md:w-[36px] flex items-center justify-center transition-all duration-500 ease-in-out ${
             expandedIndex === index
               ? "bg-[#ec8123] rotate-90"
               : "bg-white border-[1px] border-gray-300 rotate-0"
           }`}
         >
           <ButtonRight
-            className={`h-[24px] w-[24px] transition-colors duration-500 ${
+            className={`md:h-[24px] md:w-[24px] h-[20px] w-[20px] transition-colors duration-500 ${
               expandedIndex === index ? "stroke-white" : "stroke-gray-700"
             }`}
             style={{ strokeWidth: 1.5 }}

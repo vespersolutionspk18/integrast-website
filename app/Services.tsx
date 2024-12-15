@@ -70,7 +70,7 @@ const Services = () => {
   </div>
             </div>
                 </div>
-                <div className="block lg:hidden">
+                <div className="block md:hidden">
   <div
     id="button"
     className="group bg-white h-[44px] flex-row border-[1px] border-gray-700 text-gray-900 text-[16px] py-1 px-1 font-light rounded-full flex items-center justify-between w-[200px] transition-width duration-500 ease-in-out hover:w-[225px] hover:bg-gray-700 hover:border-gray-700 hover:text-white hover:cursor-pointer"
